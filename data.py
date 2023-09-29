@@ -11,7 +11,7 @@ print(cert_path)
 api_key = os.getenv("API_KEY")
 
 
-TRAIN_URL = "https://opendata.transport.nsw.gov.au/dataset/historical-gtfs-and-gtfs-realtime"
+TRAIN_URL = "https://api.transport.nsw.gov.au/v1/gtfs/schedule/sydneytrains"
 
 headers = {
     "Authorization":f"apikey {api_key}"
@@ -23,5 +23,5 @@ request_details = dict(
 
 request_details['verify'] = cert_path
 
-response = requests.get("https://api.transport.nsw.gov.au/v1/gtfs/schedule/sydneytrains",**request_details)
+response = requests.get(TRAIN_URL,**request_details)
 print(response)
