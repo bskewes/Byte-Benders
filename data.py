@@ -10,8 +10,9 @@ print(cert_path)
 
 api_key = os.getenv("API_KEY")
 
-
-TRAIN_URL = "https://api.transport.nsw.gov.au/v1/gtfs/schedule/sydneytrains"
+BASE = "https://api.transport.nsw.gov.au/"
+TRAIN_URL = f"{BASE}v1/gtfs/schedule/sydneytrains"
+TRAIN_REAL = f"{BASE}v2/gtfs/vehiclepos"
 
 headers = {
     "Authorization":f"apikey {api_key}"
@@ -25,3 +26,4 @@ request_details['verify'] = cert_path
 
 response = requests.get(TRAIN_URL,**request_details)
 print(response)
+
