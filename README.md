@@ -2,15 +2,15 @@
  
  # TODO
 
-|Section                            |Sub-task                           |Test and Implementation     |Status                      |
+|Section                            |Task                               |Test and Implementation     |Status                      |
 |-----------------------------------|-----------------------------------|----------------------------|:--------------------------:|
-|User input validation              |                                   |JC                          |[ ]                         |
-|Data read-in                       |API                                |BS                          |[ ]                         |
-|                                   |Store in SQL Lite                  |??                          |[ ]                         |
-|                                   |Frequent update                    |??                          |[ ]                         |
-|Data prep                          |                                   |??                          |[ ]                         |
-|Data analysis                      |                                   |??                          |[ ]                         |
-|Output & visualisation             |                                   |??                          |[ ]                         |
-|                                   |                                   |??                          |[ ]                         |
-|Others                             |Update readability                 |??                          |[ ]                         |
+|User input validation              |                                   |JC                          |In progress                 |
+|Data read-in                       |API                                |BS                          |In progress                 |
+|                                   |Store in SQL Lite                  |??                          |??                          |
+|                                   |Frequent update                    |??                          |??                          |
+|Data prep                          |                                   |LN                          |In progress                 |
+|Data analysis                      |                                   |??                          |??                          |
+|Output & visualisation             |                                   |??                          |??                          |
+|                                   |                                   |??                          |??                          |
+|Misc                               |Update readability                 |??                          |??                          |
 
