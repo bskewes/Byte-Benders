@@ -13,3 +13,7 @@
 |Output & visualisation             |                                   |??                          |??                          |
 |                                   |                                   |??                          |??                          |
 |Misc                               |Update readability                 |??                          |??                          |
+
+# Example of .env file
+
+> DATA_PATH = 'C:/Users/*XXX*/sample_data/'
