@@ -31,11 +31,11 @@ class Trip():
 
         pass
 
-    def format_dates(self):
+    def remove_irrelevant_records(self):
 
         pass
 
-    def remove_duplicates(self):
+    def format_dates(self):
 
         pass
 
@@ -43,3 +43,6 @@ class Trip():
 
         pass
 
+    def filter_relevant_cols(self):
+
+        pass

@@ -20,17 +20,3 @@ class Route():
 
         pass
 
-    def process_data(self):
-        # intended to run format_dates(), remove_duplicates()
-
-        pass
-
-    def format_dates(self):
-
-        pass
-
-    def remove_duplicates(self):
-
-        pass
-
-

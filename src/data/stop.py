@@ -1,5 +1,7 @@
 "Fetch stops data"
 
+import pandas as pd
+
 class Stop():
 
     def __init__(self
@@ -9,6 +11,7 @@ class Stop():
         self.api_info = api_info
         self.data_cols = data_cols
         self.database = None
+        self.df = None
 
         pass
 
@@ -23,14 +26,13 @@ class Stop():
     def process_data(self):
         # intended to run format_dates(), remove_duplicates()
 
-        pass
-
-    def format_dates(self):
+        self.split_stop_station_and_platform_names()
 
         pass
 
-    def remove_duplicates(self):
+    def split_stop_station_and_platform_names(self):
+
+        self.df[['stop_station_name','stop_platform_name']] = self.df['stop_name'].str.split(', ', n=1, expand = True)
+        self.df['stop_station_name'] = self.df['stop_station_name'].str.replace('Station', '').str.strip()
 
         pass
-
-
