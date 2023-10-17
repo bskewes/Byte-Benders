@@ -25,7 +25,10 @@ class Stop():
     def download_data(self):
         # TODO uses self.api_info and self.data_cols
 
-        pass
+        # below is temporary method until SQL Lite is implemented
+        sample_static_data_path = Path(os.getenv("DATA_PATH")) / 'Timetables Complete GTFS'
+
+        self.df = pd.read_csv(sample_static_data_path / 'stops.txt')
 
     def process_data(self):
 
@@ -44,7 +47,4 @@ class Stop():
     def read_in_data(self):
         # TODO uses self.database and self.table_name
 
-        # below is temporary method until SQL Lite is implemented
-        sample_static_data_path = Path(os.getenv("DATA_PATH")) / 'Timetables Complete GTFS'
-
-        self.df = pd.read_csv(sample_static_data_path / 'stops.txt')
+        pass

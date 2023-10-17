@@ -38,7 +38,10 @@ class Trip():
     def download_data(self):
         # TODO uses self.api_info and self.data_cols
 
-        pass
+        # below is temporary method until SQL Lite is implemented
+        sample_realtime_data_path = Path(os.getenv("DATA_PATH")) / 'Historical GTFS and GTFS Realtime - Metro'
+
+        self.df = pd.read_csv(sample_realtime_data_path / 'TripUpdate_20220601.csv')
 
     def process_data(self):
 
@@ -81,7 +84,4 @@ class Trip():
     def read_in_data(self):
         # TODO uses self.database and self.table_name
 
-        # below is temporary method until SQL Lite is implemented
-        sample_realtime_data_path = Path(os.getenv("DATA_PATH")) / 'Historical GTFS and GTFS Realtime - Metro'
-
-        self.df = pd.read_csv(sample_realtime_data_path / 'TripUpdate_20220601.csv')
+        pass
