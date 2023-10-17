@@ -8,7 +8,7 @@
 |Data read-in                       |API                                |BS                          |In progress                 |
 |                                   |Store in SQL Lite                  |JC                          |??                          |
 |                                   |Frequent update                    |??                          |??                          |
-|Data prep                          |                                   |LN                          |In progress                 |
+|Data prep                          |                                   |LN                          |Pending SQL Lite            |
 |Data analysis                      |                                   |JC                          |??                          |
 |Output & visualisation             |                                   |??                          |??                          |
 |                                   |                                   |??                          |??                          |
