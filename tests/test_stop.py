@@ -1,18 +1,13 @@
-## run tests by typing the following in cmd: python -m pytest
-## pytest.ini specifies where all the tests are stored
-
-import pytest
+"Tests for data.stop"
 
 import pandas as pd
 
 from data.stop import Stop
-from data.route import Route
-from data.trip import Trip
-from analysis.relevant_trips import RelevantTrips
 
 class TestStop:
 
     def test_split_stop_station_and_platform_names(self):
+        "Test that the stop_name field is split appropriately into stop_station_name and stop_platform_name"
         
         df_in = pd.DataFrame({
              'trip_id': [1, 2, 3]
@@ -26,13 +21,14 @@ class TestStop:
             ,'stop_platform_name': ['Platform 1', 'Platform 2', 'Platform 3']
             })
         
-        stop = Stop(api_info = '', data_cols = [''])
+        stop = Stop()
         stop.df = df_in.copy()
         stop.split_stop_station_and_platform_names()
 
         assert(stop.df.equals(df_out))
 
     def test_process_data(self):
+        "Test that all data processing is performed"
 
         df_in = pd.DataFrame({
              'trip_id': [1, 2, 3]
@@ -46,8 +42,10 @@ class TestStop:
             ,'stop_platform_name': ['Platform 1', 'Platform 2', 'Platform 3']
             })
         
-        stop = Stop(api_info = '', data_cols = [''])
+        stop = Stop()
         stop.df = df_in.copy()
         stop.process_data()
 
         assert(stop.df.equals(df_out))
+
+
