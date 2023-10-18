@@ -16,4 +16,5 @@
 
 # Example of .env file
 
-> DATA_PATH = 'C:/Users/*XXX*/sample_data/'
+> DATA_PATH = "C:/Users/*XXX*/sample_data/"
+> SQLDRIVER = "sqlite:///C:/Users/*XXX*/db.db"
