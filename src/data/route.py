@@ -2,35 +2,29 @@
 
 class Route():
 
-    def __init__(self
-                ,api_info
-                ,data_cols):
+    def __init__(self):
+        # TODO need to fill in the fixed info for these parameters (except for df)
 
-        self.api_info = api_info
-        self.data_cols = data_cols
+        self.api_info = None
+        self.data_cols = None
         self.database = None
+        self.table_name = None
+
+        self.df = None
 
         pass
 
     def download_data(self):
+        # TODO uses self.api_info and self.data_cols
 
         pass
 
     def store_data(self):
+        # TODO uses self.database and self.table_name
 
         pass
 
-    def process_data(self):
-        # intended to run format_dates(), remove_duplicates()
+    def read_in_data(self):
+        # TODO uses self.database and self.table_name
 
         pass
-
-    def format_dates(self):
-
-        pass
-
-    def remove_duplicates(self):
-
-        pass
-
-
