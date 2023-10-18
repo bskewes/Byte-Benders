@@ -5,12 +5,12 @@
 |Section                            |Task                               |Test and Implementation     |Status                      |
 |-----------------------------------|-----------------------------------|:--------------------------:|:--------------------------:|
 |User input validation              |                                   |JC                          |In progress                 |
-|Data read-in                       |API                                |BS                          |In progress                 |
+|Data read-in                       |API                                |JC                          |In progress                 |
 |                                   |Store in SQL Lite                  |JC                          |??                          |
-|                                   |Frequent update                    |??                          |??                          |
+|                                   |Frequent update                    |LN                          |??                          |
 |Data prep                          |                                   |LN                          |Pending SQL Lite            |
-|Data analysis                      |                                   |JC                          |??                          |
-|Output & visualisation             |                                   |??                          |??                          |
+|Data analysis                      |                                   |JC/LN                       |??                          |
+|Output & visualisation             |                                   |LN                          |??                          |
 |                                   |                                   |??                          |??                          |
 |Misc                               |Update readability                 |??                          |??                          |
 
