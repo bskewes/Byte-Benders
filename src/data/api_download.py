@@ -1,12 +1,12 @@
 import os
-from dotenv import find_dotenv,load_dotenv
+from dotenv import load_dotenv
 import requests
+from google.transit import gtfs_realtime_pb2
+
+
 load_dotenv()
 
-dotenv_path = find_dotenv()
-
 cert_path = os.getenv("CERT_PATH", True) # True forces full verification
-print(cert_path)
 
 api_key = os.getenv("API_KEY")
 
@@ -34,5 +34,5 @@ request_details['verify'] = cert_path
 
 response_static = requests.get(METRO_STATIC,**request_details)
 print(response_static)
-response_realtime = requests.get(METRO_REALTIME,**request_details)
+response_realtime = requests.get(METRO_REALTIME,**request_details) # TODO - fix - still getting response 500 for now
 print(response_realtime)
